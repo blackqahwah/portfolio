@@ -1,0 +1,10 @@
+@font-face {
+    font-family: bodyfont;
+    src: url('./typeface/Adlanta.otf');
+}
+
+#rahmahtxt {
+    font-family: bodyfont;
+    font-size: 20vw;
+    color: white;
+}
