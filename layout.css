@@ -3,3 +3,11 @@
     display: flex;
     flex-direction: column;
 }
+
+#getmetoo {
+    display: none;
+}
+
+.showFood {
+    display: block;
+}
