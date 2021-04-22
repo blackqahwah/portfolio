@@ -8,6 +8,14 @@
     display: none;
 }
 
+#getmetwo {
+    display: none;
+}
+
+#getmethree {
+    display: none;
+}
+
 .showFood {
     display: block;
 }

@@ -28,24 +28,60 @@ let weirdFoodCombo = weirdFood.join(' ');
 
 document.getElementById("getmetoo").innerHTML= weirdFoodCombo;
 
-let foodbtn = document.getElementById("foodButton");
+var werdfood = document.getElementById("getmetoo");
 
-//  _foodFunction=>{
- 
-//   document.getElementById("getmetoo").classList.add('showFood');
+function foodFunction() {
+ if (werdfood.style.display === "none") {
+    werdfood.style.display = "block";
+  } else {
+    werdfood.style.display ="none";
+  }
+}
 
+
+let weirdFood2 =  [foodArr[0][1], "and", foodArr[1][1]];
+
+let weirdFoodCombo2 = weirdFood2.join(' ');
+
+document.getElementById("getmetwo").innerHTML= weirdFoodCombo2;
+
+var werdfood2 = document.getElementById("getmetwo");
+
+function foodFunction2() {
+ if (werdfood2.style.display === "none") {
+    werdfood2.style.display = "block";
+  } else {
+    werdfood2.style.display ="none";
+  }
+}
+
+let weirdFood3 =  [foodArr[1][0], "and", foodArr[2][2], "and", foodArr[3][1]];
+
+let weirdFoodCombo3 = weirdFood3.join(' ');
+
+document.getElementById("getmethree").innerHTML= weirdFoodCombo3;
+
+var werdfood3 = document.getElementById("getmethree");
+
+function foodFunction3() {
+ if (werdfood3.style.display === "none") {
+    werdfood3.style.display = "block";
+  } else {
+    werdfood3.style.display ="none";
+  }
+}
+
+//  var foodbtn = document.getElementById('foodButton');
+//  function foodFunction() { foodbtn.addEventListener('click', () => {
+//     werdfood.style.display= "block";
+//    })
 // }
-
-foodbtn.addEventListener('click', () => {
-  document.getElementById("getmetoo").classList.add('showFood')
-})
-
-
 
 
 console.log(weirdFood);
 console.log(weirdFoodCombo);
     
+
 
 
 

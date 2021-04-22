@@ -71,8 +71,22 @@
 
 <h5>Wanna see a weird food combo? Click any button below!</h5>
 
-<button class="btn btn-outline-primary" id="foodButton">WFC1</button>
+<span class="d-flex flex-row justify-content-start">
+<button class="btn btn-outline-primary" id="foodButton" onclick="foodFunction()">WFC1</button>
+<h4 id="getmetoo">
+      
+</h4>
+<button class="btn btn-outline-primary" id="foodButton2" onclick="foodFunction2()">WFC2</button>
 
+<h4 id="getmetwo">
+      
+</h4>
+<button class="btn btn-outline-primary" id="foodButton3" onclick="foodFunction3()">WFC3</button>
+
+<h4 id="getmethree">
+      
+</h4>
+</span>
 
 <h4 id="getmetoo">
       
@@ -82,9 +96,30 @@
 
   <h6 class="text-success">See code snippet below</h6>  
   <code class="card">
-    
+    let foodArr = [ <br>
+    ["rice", "chicken", "soup"], <br>
+    ["pancakes", "syrup", "cream"], <br>
+    ["fries", "salad", "steak"], <br>
+    [['noodles', 'chicken'], "pasta", "fish"]<br>
+  ];<br>
+let weirdFood =  [foodArr[0][2], "and", foodArr[1][2]];<br>
+
+let weirdFoodCombo = weirdFood.join(' ');<br>
+
+document.getElementById("getmetoo").innerHTML= weirdFoodCombo;<br>
+
+var werdfood = document.getElementById("getmetoo");<br>
+
+function foodFunction() { <br>
+ if (werdfood.style.display === "none") { <br>
+    werdfood.style.display = "block"; <br>
+  } else { <br>
+    werdfood.style.display ="none"; <br>
+  }
+}
   </code>
   </span>
+
   </span>
 
 </div>
